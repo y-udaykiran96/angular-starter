@@ -12,6 +12,7 @@ import { OshopModule } from './oshop/oshop.module';
   ],
   imports: [
     BrowserModule,
+    // NgbModule,
     AppRoutingModule,
     OshopModule
   ],
