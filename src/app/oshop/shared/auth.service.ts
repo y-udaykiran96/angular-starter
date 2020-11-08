@@ -42,6 +42,14 @@ export class AuthService {
   //   this.authService.signIn(GoogleLoginProvider.PROVIDER_ID);
   // }
 
+  login() {
+    this.authService.signIn(FacebookLoginProvider.PROVIDER_ID, fbLoginOptions);
+  }
+
+  logout() {
+    this.authService.signOut();
+  }
+
   signInWithFB(): void {
     this.authService.signIn(FacebookLoginProvider.PROVIDER_ID, fbLoginOptions);
   }
