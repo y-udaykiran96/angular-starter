@@ -15,7 +15,10 @@ export class BsNavbarComponent implements OnInit {
     this.auth.appUser$.subscribe(user => {
       this.appUser = user
     })
+  }
 
+  logout() {
+    this.auth.logout();
   }
 
 }
